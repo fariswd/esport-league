@@ -27,11 +27,11 @@ export default function Header(props) {
             flexDirection: 'row',
             alignItems: 'center',
           }}>
-          <MenuIcon name='search' size={25} color='#666' onPress={() => console.log('kepencet bos')} />
+          <MenuIcon name='search' size={25} color='#666' onPress={() => props.searchOpen()} />
           <Text>Cari disini</Text>
         </TouchableOpacity>
       </View>
-      <MenuIcon name='home' size={25} color='#666' onPress={() => console.log('kepencet bos')} />
+      <MenuIcon name='notifications' size={25} color='#666' onPress={() => props.notificationOpen()} />
     </View>
   )
 }
