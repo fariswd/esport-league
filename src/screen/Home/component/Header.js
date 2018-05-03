@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
+import { Badge } from 'react-native-elements'
 
 import MenuIcon from './MenuIcon'
 
@@ -31,7 +32,10 @@ export default function Header(props) {
           <Text>Cari disini</Text>
         </TouchableOpacity>
       </View>
-      <MenuIcon name='notifications' size={25} color='#666' onPress={() => props.notificationOpen()} />
+      <View style={{justifyContent: 'center'}}>
+        <MenuIcon name='notifications' size={25} color='#666' onPress={() => props.notificationOpen()} />
+        <View style={{position: 'absolute', right: 0, top: 0, borderRadius: 5, height: 10, width: 10, backgroundColor: '#666'}} />
+      </View>
     </View>
   )
 }
