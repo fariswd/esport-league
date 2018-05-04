@@ -6,6 +6,7 @@ import ProfileScreen from '../screen/Profile'
 import SearchScreen from '../screen/Search'
 import DetailScreen from '../screen/Detail'
 import NotificationScreen from '../screen/Notification'
+import WebViewScreen from '../screen/WebView'
 
 const RootNavigation = StackNavigator({
     Home: {
@@ -23,6 +24,9 @@ const RootNavigation = StackNavigator({
     },
     Notification: {
       screen: NotificationScreen,
+    },
+    WebView: {
+      screen: WebViewScreen,
     },
   }, {
     initialRouteName: 'Home',
